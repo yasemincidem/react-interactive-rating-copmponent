@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { RatesComponent } from './RatesComponent'
+import { ThankyouComponent } from './ThankyouComponent'
 
-function App() {
+const App = () => {
+  const [isVisibleRate, setIsVisibleRate] = useState(true)
+  const [selectedRate, setSelectedRate] = useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-screen items-center justify-center bg-black-rgb">
+      {isVisibleRate ? (
+        <RatesComponent
+          setIsVisibleRate={setIsVisibleRate}
+          setSelectedRate={setSelectedRate}
+          selectedRate={selectedRate}
+        />
+      ) : (
+        <ThankyouComponent selectedRate={selectedRate} />
+      )}
     </div>
-  );
+  )
 }
-
-export default App;
+export default App
