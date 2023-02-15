@@ -13,7 +13,7 @@ const ThankyouComponent = ({ selectedRate }: TypeThankyouProps) => {
       <div className="flex justify-center items-center">
         <img src="image.svg" className="w-1/2"></img>
       </div>
-      <div className="flex justify-center items-center text-amber-500 rounded-lg bg-rate-hex p-2 ml-20 mr-20 text-sm">
+      <div className="w-full flex justify-center items-center text-amber-500 rounded-lg bg-rate-hex p-2 text-sm">
         You selected&nbsp;
         <span id="selected-rate">{selectedRate}&nbsp;</span> out of&nbsp;
         <span id="top-rate">{RATES.length}</span>

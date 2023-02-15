@@ -49,7 +49,7 @@ const RatesComponent = (props: TypeRatesProps) => {
       <div className="flex flex-row justify-between">
         {RATES.map(rate => (
           <button
-            className={`flex items-center justify-center w-[50px] h-[50px] rounded-full text-gray-hex ${
+            className={`flex items-center justify-center w-[40px] h-[40px] rounded-full text-gray-hex ${
               selectedRate !== rate.value ? 'bg-rate-hex' : 'bg-amber-500'
             }`}
             value={rate.value}
