@@ -1,6 +1,11 @@
-# Interactive rating component
-This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!
-UX is provided by FrontendMaster.
+# Interactive rating react component
+This is a nice, small project to practice handling user interactions and updating the DOM. 
+
+# Tech stack:
+
+- React
+- Typescript
+- Tailwind
 
 # Challenge:
 Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
