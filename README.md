@@ -17,7 +17,7 @@ You can find the detailed explanation of this challenge down below the link.
 [Interactive Rating Component](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
 # Demo:
- ![Demo](../../demo.gif)
+ ![Demo](./public/demo.gif)
 
 # Getting Started with Create React App
 
